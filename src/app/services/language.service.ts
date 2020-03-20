@@ -18,4 +18,10 @@ export class LanguageService {
   getPossiblesLanguages(sentence: string) {
     return this.http.get(this.baseUrl + '&query=' + sentence);
   }
+  postData(name) {
+    const data = {
+      roomName: name
+    }
+    return this.http.post('https://ajax-course.herokuapp.com/rooms', data);
+  }
 }

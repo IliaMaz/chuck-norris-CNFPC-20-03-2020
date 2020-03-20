@@ -20,4 +20,9 @@ export class PageLangagueComponent implements OnInit {
       this.possiblesLanguages = reponse.results;
     })
   }
+
+  //example for post call
+  clickRoom() {
+    this.ls.postData(this.sentenceFromInput).subscribe(res => console.log(res));
+  }
 }
