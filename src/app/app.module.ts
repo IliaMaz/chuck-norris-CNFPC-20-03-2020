@@ -9,6 +9,8 @@ import { PageJokesComponent } from './components/page-jokes/page-jokes.component
 import { HttpClientModule } from "@angular/common/http";
 import { PageLangagueComponent } from './components/page-langague/page-langague.component';
 
+import { FormsModule } from "@angular/forms";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { PageLangagueComponent } from './components/page-langague/page-langague.
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
