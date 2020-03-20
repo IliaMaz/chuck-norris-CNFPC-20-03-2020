@@ -1,27 +1,27 @@
-# ChuckNorris
+# Process
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.6.
+0. Check the API
+  you are making the good request to the good endpoint
 
-## Development server
+1. Service
+Create the right function inside the service
+ - We need to app the httpclientModule to the app.module.ts
+ - We need the load the httpclient as a private ressource
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+2. Component
+ng g c components/page-joke
 
-## Code scaffolding
+3. Create the routing in app-routing.module
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+  {
+    path: '',
+    redirectTo: 'joke',
+    pathMatch: 'full'
+  },
+  {
+    path: 'joke',
+    component: PageJokesComponent
+  }
+4. Load the data in the component TS
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+5. Show the data in the component HTML
