@@ -11,7 +11,7 @@ import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 export class PageJokesComponent implements OnInit {
   joke;
   categoriesArray: string[] = [];
-
+  clickedCategory;
   constructor(private cs: ChuckService) { }
 
   //wake up
@@ -26,6 +26,12 @@ export class PageJokesComponent implements OnInit {
   }
   handleClick() {
     this.cs.getJoke().subscribe((response: ChuckApi) => {
+      this.joke = response.value;
+    })
+  }
+  clickOnCategory(category) {
+    this.clickedCategory = category;
+    this.cs.getJokeFromCategory(this.clickedCategory).subscribe((response: ChuckApi) => {
       this.joke = response.value;
     })
   }

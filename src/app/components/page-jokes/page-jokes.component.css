@@ -1,3 +1,6 @@
 ul{
   column-count: 2;
 }
+.selected{
+  text-decoration: underline;
+}
