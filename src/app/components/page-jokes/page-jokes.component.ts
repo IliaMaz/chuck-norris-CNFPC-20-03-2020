@@ -17,5 +17,9 @@ export class PageJokesComponent implements OnInit {
       this.joke = response.value;
     })
   }
-
+  handleClick() {
+    this.cs.getJoke().subscribe((response: ChuckApi) => {
+      this.joke = response.value;
+    })
+  }
 }
