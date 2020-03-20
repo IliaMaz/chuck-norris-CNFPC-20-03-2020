@@ -24,6 +24,9 @@ ng g c components/page-joke
     path: 'joke',
     component: PageJokesComponent
   }
+
 4. Load the data in the component TS with the use of the service and the subscibe
 
 5. Show the data in the component HTML .. don't forget to use the directives
+    Library for the flags : flag-icon-css
+    Use the "language_code"

@@ -7,11 +7,13 @@ import { PageJokesComponent } from './components/page-jokes/page-jokes.component
 
 //I need to teach Angular about http requests
 import { HttpClientModule } from "@angular/common/http";
+import { PageLangagueComponent } from './components/page-langague/page-langague.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageJokesComponent
+    PageJokesComponent,
+    PageLangagueComponent
   ],
   imports: [
     BrowserModule,
