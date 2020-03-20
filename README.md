@@ -2,6 +2,8 @@
 
 0. Check the API
   you are making the good request to the good endpoint
+  https://languagelayer.com/php_helper_scripts/language_api.php?secret_key=0d1227d3c54c395bcc7bf80a5927fde9&query=Hello
+
 
 1. Service
 Create the right function inside the service
@@ -22,6 +24,6 @@ ng g c components/page-joke
     path: 'joke',
     component: PageJokesComponent
   }
-4. Load the data in the component TS
+4. Load the data in the component TS with the use of the service and the subscibe
 
-5. Show the data in the component HTML
+5. Show the data in the component HTML .. don't forget to use the directives
