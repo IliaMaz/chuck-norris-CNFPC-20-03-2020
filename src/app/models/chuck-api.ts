@@ -7,3 +7,4 @@ export interface ChuckApi {
   "url": string;
   "value": string;
 }
+

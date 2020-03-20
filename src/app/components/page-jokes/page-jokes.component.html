@@ -1,3 +1,8 @@
 <h1>Chuck Norris Jokes</h1>
 
+<ul>
+  <li *ngFor="let category of categoriesArray">
+    {{category}}
+  </li>
+</ul>
 <p (click)="handleClick()">{{ joke }}</p>

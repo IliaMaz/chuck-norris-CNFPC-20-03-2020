@@ -11,4 +11,10 @@ export class ChuckService {
   getJoke() {
     return this.http.get('https://api.chucknorris.io/jokes/random'); // it's a promise... susbsribe
   }
+
+  getCategories() {
+    return this.http.get('https://api.chucknorris.io/jokes/categories');
+  }
+
 }
+
