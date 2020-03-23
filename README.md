@@ -32,3 +32,15 @@ ng g c components/page-joke
 5. Show the data in the component HTML .. don't forget to use the directives
     Library for the flags : flag-icon-css
     Use the "language_code"
+
+
+# Continuous Intergration
+Create a Github Repository linked to your project
+Go to "netlify.com" to create a "new site from git"
+In the deploy section :
+- command : ng build --prod
+- folder : dist/chuck-norris
+
+# Progressive Web Application
+ng add @angular/pwa in your working folder
+
