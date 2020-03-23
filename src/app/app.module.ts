@@ -10,6 +10,8 @@ import { HttpClientModule } from "@angular/common/http";
 import { PageLangagueComponent } from './components/page-langague/page-langague.component';
 
 import { FormsModule } from "@angular/forms";
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { FormsModule } from "@angular/forms";
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
