@@ -42,5 +42,8 @@ In the deploy section :
 - folder : dist/chuck-norris
 
 # Progressive Web Application
+Allow offline Access, but not do the get request of course
+and allow the use to install the application on his device.
+
 ng add @angular/pwa in your working folder
 
